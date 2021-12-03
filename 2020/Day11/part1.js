@@ -48,9 +48,7 @@ class Seating {
                     // Otherwise, the seat's state does not change.
                     updated += seat;
                 }
-
             })
-
             updatedSeats.push(updated);
         })
 
@@ -140,6 +138,7 @@ while (s.nextState()) {
 // s.display();
 
 console.log(s.getOccupiedSeats());
+
 
 const s2 = new Seating(lines);
 
