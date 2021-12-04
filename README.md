@@ -1,4 +1,4 @@
-# advent-of-code
+# Advent of Code
 My Advent of Code Solutions written in Javascript
 
 ## How to Use:
