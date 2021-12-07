@@ -7,11 +7,11 @@ let c = line.split(',').map((x) => parseInt(x, 10));
 let leastFuel = Infinity;
 let max = c.reduce((a,b) => Math.max(a,b));
 for (let i = 0; i < max; i++) {
-    let fuel = 0;
+    let currentFuel = 0;
     for (let j = 0; j < c.length; j++) {
         let d = Math.abs(c[j] - i)
         for (let k = 1; k <= d; k++) {
-            fuel+=k
+            currentFuel+=k
         }
     }
     leastFuel = Math.min(leastFuel, fuel)
