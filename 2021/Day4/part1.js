@@ -15,7 +15,7 @@ for (const item of lines.slice(1)) {
         line.trim()
         .split(/\s+/)
         .map((number) => ({ value: +number, drawn: false })))
-);
+    );
 }
 
 const isBingo = (board) => {
