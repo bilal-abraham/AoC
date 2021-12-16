@@ -5,8 +5,6 @@ const input = fs.readFileSync('input.txt', { encoding: 'utf-8' })
 let lines = input.trim().split(/\n/);
 let l = lines.map((line) => [...line].map((x) => parseInt(x)));
 
-let map = Array.from({ length: l.length*5 }, () => Array.from({ length: l[0].length*5 }, () => 0));
-
 
 const directions = [
     [-1, 0],
